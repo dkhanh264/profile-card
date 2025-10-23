@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-wrapper">
+        <h2 class="title">Điền thông tin vào form dưới đây:</h2>
+        <form id="infoForm">
+          <div class="input-wrapper">
+            <label>Họ và tên: </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nhập họ tên"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label>Tuổi: </label>
+            <input type="number" id="age" name="age" placeholder="Nhập tuổi" />
+          </div>
+
+          <div class="input-wrapper">
+            <label>Giới tính: </label>
+            <input type="radio" id="genderMale" name="gender" value="Nam" /> Nam
+            <div class="space"></div>
+            <input type="radio" id="genderFemale" name="gender" value="Nữ" /> Nữ
+            <div class="space"></div>
+            <input type="radio" id="genderElse" name="gender" value="Khác" />
+            Khác
+          </div>
+
+          <div class="input-wrapper">
+            <label>Trường đại học: </label>
+            <select id="university" name="university">
+              <option value="">Chọn trường</option>
+              <option value="Đại học Công Nghiệp">Đại học Công Nghiệp</option>
+              <option value="Đại học Mở">Đại học Mở</option>
+              <option value="Đại học Quốc Tế">Đại học Quốc Tế</option>
+              <option value="Đại học Van Lang">Đại học Van Lang</option>
+              <option value="Đại học Bách Khoa">Đại học Bách Khoa</option>
+            </select>
+          </div>
+
+          <div class="selected">
+            <label>Sở thích: </label>
+            <div class="selected-group">
+              <input type="checkbox" name="hobby" value="Chơi game" /> Chơi game
+              <div class="space"></div>
+              <input type="checkbox" name="hobby" value="Ca hát" /> Ca hát
+              <div class="space"></div>
+              <input type="checkbox" name="hobby" value="Nghệ thuật" /> Nghệ
+              thuật
+              <div class="space"></div>
+              <input type="checkbox" name="hobby" value="Nhảy múa" /> Nhảy múa
+              <div class="space"></div>
+              <input type="checkbox" name="hobby" value="Đọc sách" /> Đọc sách
+              <div class="space"></div>
+              <input type="checkbox" name="hobby" value="Du lịch" /> Du lịch
+              <div class="space"></div>
+              <input type="checkbox" name="hobby" value="Thể thao" /> Thể thao
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label>Ảnh cá nhân: </label>
+            <input type="file" id="avatar" name="avatar" accept="image/*" />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="card-wrapper">
+        <h2 class="title">Card Profile</h2>
+        <div class="card">
+          <div id="profileContent" >
+            <div class="header">
+              <img id="profileAvatar" class="avatar" alt="Avatar" />
+              <div class="name-and-gender">
+                <div class="name" id="profileName">—</div>
+                <div class="AgenGender" id="AgenGender">—</div>
+              </div>
+            </div>
+            <div class="row">
+              <label>Trường:</label>
+              <div class="meta" id="profileUniv">—</div>
+            </div>
+            <div class="row">
+              <label>Sở thích:</label>
+              <div class="chips" id="profileHobbies"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

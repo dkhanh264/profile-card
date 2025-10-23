@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Sans+Bogle&family=Fjalla+One&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* { 
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+  height: 100vh;
+}
+body{
+  font-family: "Roboto";
+color:#222;
+  background:
+    radial-gradient(1200px 600px at 20% 85%, rgba(138,198,209,0.18) 0%, transparent 60%),
+    radial-gradient(1200px 600px at 80% 20%, rgba(255,230,150,0.25) 0%, transparent 60%),
+    linear-gradient(#f8f9fb, #f4f3ef 60%, #f8f8f4);
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.main-container{
+    width: 1000px;
+  height:560px;
+  background:#fff;
+  border-radius:28px;
+  overflow:hidden;                  
+  display:flex;
+  flex-direction: row-reverse;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08),
+    0 40px 80px rgba(0,0,0,0.06);
+}
+
+/* ===== FORM BÊN PHẢI ===== */
+.form-wrapper{
+  width: 60%;           
+  padding: 36px 56px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:#fff;
+}
+
+.title{
+  margin: 0 0 18px;
+  font-size:20px;
+  font-weight:600;
+  color:#1f2937;
+}
+
+.input-wrapper,
+.selected{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.input-wrapper label,
+.selected label{
+  width:140px;
+  font-size:14px;
+  color:#374151;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select{
+  flex:1;
+  min-width: 220px;
+  height:42px;
+  padding: 0 12px;
+  border:1px solid #E5E7EB;
+  border-radius:8px;
+  outline: none;
+  background:#F9FAFB;
+}
+
+
+.selected-group{
+  flex:1;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  align-items:center;
+  min-height:42px;
+}
+
+button{
+  width:120px;
+  height:44px;
+  margin-top:14px;
+  border:0;
+  border-radius:10px;
+  background:#34d399;          
+  color:#fff;
+  font-weight:600;
+  letter-spacing:.3px;
+  cursor:pointer;
+  box-shadow:0 6px 14px rgba(52,211,153,.25);
+}
+
+
+.card-wrapper{
+  flex: 40%;                             
+  background: #fecb2f;                 
+  padding: 40px 28px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#2b2b2b;
+}
+
+.profile-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 24px;
+}
+
+.name-and-gender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0px 12px 0px;
+}
+.card-wrapper .title{
+  color:#2b2b2b;
+  font-size:22px;
+  font-weight:700;
+  margin: 12px 0 6px;
+  text-align:center;
+}
+.card-wrapper .subtitle{
+  margin:0;
+  text-align:center;
+  font-size:13px;
+  color:#4b5563;
+}
+
+.chips{
+    display: flex;
+    gap: 8px;
+}
+
+.row label{
+    font-weight: bold;
+}
+
+.name{
+    font-size: large;
+    font-weight: bold;
+}
+
+.AgenGender{
+    color: #646464;
+}
+
