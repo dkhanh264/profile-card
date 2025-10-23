@@ -60,11 +60,19 @@ color:#222;
   flex-wrap: wrap;
 }
 
-.input-wrapper label,
+.input-wrapper label{
+  width:140px;
+  font-size:14px;
+  color:#374151;
+}
+
+
+
 .selected label{
   width:140px;
   font-size:14px;
   color:#374151;
+  align-self: flex-start;
 }
 input[type="text"],
 input[type="number"],
